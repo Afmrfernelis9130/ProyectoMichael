@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="css/bootstrap-select.css"/>
     <!-- scrollbar css -->
     <link rel="stylesheet" href="css/perfect-scrollbar.css"/>
+    <link rel="stylesheet" href="css/mio.css"/>
     <!-- custom css -->
     <link rel="stylesheet" href="css/custom.css"/>
     <!--[if lt IE 9]>
@@ -133,8 +134,18 @@
                                                 <!-- Aqui el form para la consultar los usuarios user-->
 
                                                 <div class="input-group mb-3" >
-                                                    <input id="inputBuscar" value="hola" type="text" class="form-control">
-                                                    <button class="btn btn-outline-secondary" type="button" id="bntBuscar">Buscar</button>
+                                                    <input id="inputBuscar"  type="text" class="form-control">
+                                                    <select class="form-select select" id="validationFiltro"
+                                                            required>
+                                                        <option selected disabled value="">SELECCIONA...</option>
+                                                        <option>ESTADO</option>
+                                                        <option>CARGO</option>
+                                                        <option>MINISTERIO</option>
+                                                        <option>ESTADO CIVIL</option>
+                                                        <option>HIJOS</option>
+                                                        <option>CUMPLEAÑO</option>
+                                                    </select>
+                                                    <button class="btn btn-outline-secondary" type="button" id="btnBuscar">Buscar</button>
                                                 </div>
 
                                                 <table class="table" >

@@ -20,6 +20,13 @@
     "pass":"123456",
     "email": "pmartinez@gmail.com",
     "name": "Pedro"
-  }
+  },
+  {
+  "id": 4,
+  "username":"fmartinez",
+  "pass":"1234567",
+  "email":"fmartinez@gmail.com2",
+  "name": "Fernelis"
 
+}
 ]
