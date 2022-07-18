@@ -11,7 +11,7 @@ let findOn = false;
 
 document.addEventListener("DOMContentLoaded", () => {
 
-    fetchData();
+    fetchData()
 
 
 });
@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
 btnBuscar.addEventListener("click", () => {
     btnClick = true;
 
-    fetchData();
+    fetchData()
 });
 
 const fetchData = async () => {

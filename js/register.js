@@ -1,34 +1,79 @@
-let registro={name: '', lastname: '', dateOfBirth: '',placeOfBirth: '',nationality: '', identityCard: '', adress: '',
-    phone: '',email: '', facebook: '', instagram: '',academicLeve: '',numberOfChildren: '', dateOfConversion: '', sex: '',child: '',
-    position: '',maritalStatusl: '', ministry: '', status: ''};
 
+let arr = [];
 
-let name = document.getElementById("name");
-let lastname = document.getElementById("lastname");
-let dateOfBirth = document.getElementById("dateOfBirth");
-let placeOfBirth = document.getElementById("placeOfBirth");
-let nationality= document.getElementById("nationality");
-let identityCard = document.getElementById("identity");
-let adress = document.getElementById("adress");
-let phone = document.getElementById("phone");
-let email = document.getElementById("email");
-let facebook = document.getElementById("facebook");
-let instagram = document.getElementById("instagram");
-let academicLevel = document.getElementById("academicLevel");
+ let name = document.getElementById("validationNombre").value;
+let lastname = document.getElementById("validationApellido").value;
+let dateOfBirth = document.getElementById("validationFechaN");
+let placeOfBirth = document.getElementById("validationLugarN");
+let nationality = document.getElementById("validationNacinalidad");
+let identityCard = document.getElementById("validationCedula");
+let adress = document.getElementById("alidationDireccion");
+let phone = document.getElementById("validationTelefono");
+let email = document.getElementById("validationCorreo");
+let facebook = document.getElementById("validationFB");
+let instagram = document.getElementById("validationIG");
+let academicLevel = document.getElementById("validationNA");
 let numberOfChildren = document.getElementById("numberOfChildren");
-let dateOfConversion = document.getElementById("dateOfConversion");
+let dateOfConversion = document.getElementById("validationFC");
 let sex = document.getElementById("sex");
-let child= document.getElementById("child");
+let child = document.getElementById("child");
 let position = document.getElementById("position");
 let maritalStatus = document.getElementById("maritalStatus");
-let ministry= document.getElementById("ministry");
+let ministry = document.getElementById("ministry");
 let status = document.getElementById("status");
+let btn = document.getElementById("btn");
 
 
-register =()=>{
-    name.value
+btn.addEventListener("click", () => {
+    registrar()
 
 
+})
+
+
+
+
+
+
+function registrar()  {
+   const registro = {};
+registro.name=name;
+registro.last_name=lastname;
+registro.dateOfBirth=dateOfBirth;
+registro.placeOfBirth=placeOfBirth;
+registro.nationality=nationality;
+registro.identityCard=identityCard;
+registro.adress=adress;
+registro.phone=phone;
+registro.email=email;
+registro.facebook=facebook;
+registro.instagram=instagram;
+registro.academicLevel=academicLevel;
+registro.numberOfChildren=numberOfChildren;
+registro. dateOfConversion=dateOfConversion;
+registro.sex=sex;
+registro.child=child;
+registro.position=position;
+registro.maritalStatus=maritalStatus;
+registro.ministry=ministry;
+registro.status=status;
+
+
+arr.push(registro);
+
+    console.log(arr)
+
+
+
+
+
+
+}
+
+function ErrorForEmail(email) {
+    let regax = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/
+
+    return regax.test(email);
 }
 
 
