@@ -1,4 +1,4 @@
-const api = "prueba.json";
+const api = "user.json";
 
 const btnBuscar = document.getElementById("btnBuscar");
 let inputBuscar = document.getElementById("inputBuscar");
