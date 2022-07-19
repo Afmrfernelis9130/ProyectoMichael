@@ -89,6 +89,8 @@
             </div>
         </nav>
         <!-- end sidebar -->
+
+
         <!-- right content -->
         <div id="content">
 
@@ -125,8 +127,19 @@
             <!-- dashboard inner -->
             <div class="midde_cont">
 
+          <!--bombre del modulo donde estamos-->
+                <div class="midde_cont">
+                    <div class="container-fluid">
+                        <div class="row column_title">
+                            <div class="col-md-12">
+                                <div class="page_title">
+                                    <h2>Registro</h2>
+                                </div>
+                            </div>
+                        </div>
                 <!-- REGISTRO -->
                 <div class="row column2 graph margin_bottom_30">
+
                     <div class="col-md-l2 col-lg-12">
                         <div class="white_shd full">
 
@@ -134,9 +147,12 @@
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="content">
+                                            <p>prueba</p>
                                             <div class="area_chart">
 
-                                                <!-- Aqui el form para la consultar los usuarios user-->
+
+
+                                                <!-- Aqui el form para registrarlos usuarios user-->
                                                 <form class="row g-3 needs-validation" novalidate>
 
                                                     <div class="col-md-4">
@@ -241,64 +257,59 @@
 
                                                     </div>
 
+
+                                             <!--      RADIO BUTTON-->
                                                     <div class="col-md-2">
                                                         <label class="form-label">SEXO</label>
-                                                        <div class="form-check">
-                                                            <label class="form-check-label" >
-                                                                F
-                                                            </label>
-                                                            <input class="form-check-input" type="radio"
-                                                                   name="flexRadioDefault" id="flexRadioSexo1">
+                                                        <br>
+                                                        <div class="form-check form-check-inline">
 
-                                                            <label class="form-check-label" >
-                                                                M
-                                                            </label>
+                                                            <input class="form-check-input" type="radio" name="radioSex" id="radioSexF" value="F">
+                                                            <label class="form-check-label" for="radioSexF">F</label>
+                                                        </div>
 
-                                                            <input class="form-check-input" type="radio"
-                                                                   name="flexRadioDefault" id="flexRadioSexo2" checked>
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="radio" name="radioSex" id="radioSexM" value="M">
+                                                            <label class="form-check-label" for="radioSexM">M</label>
 
                                                         </div>
 
-
                                                     </div>
+
+
 
                                                     <div class="col-md-2">
                                                         <label class="form-label">HIJOS</label>
-                                                        <div class="form-check">
+                                                        <br>
+                                                        <div class="form-check form-check-inline">
 
+                                                            <input class="form-check-input" type="radio" name="radioH" id="radioHSI" value="si">
+                                                            <label class="form-check-label" for="radioHSI">SI</label>
+                                                        </div>
 
-                                                            <input class="form-check-input" type="radio"
-                                                                   name="flexRadioDefault" id="flexRadioDefault3">
-
-                                                            <label class="form-check-label" for="flexRadioDefault3">
-                                                                SI </label>
-
-
-                                                            <label class="form-check-label" for="flexRadioDefault4">
-                                                                NO </label>
-
-
-                                                            <input class="form-check-input" type="radio"
-                                                                   name="flexRadioDefault" id="flexRadioDefault4"
-                                                                   checked>
-
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="radio" name="radioH" id="radioHNO" value="no">
+                                                            <label class="form-check-label" for="radioHNO">NO</label>
 
                                                         </div>
 
                                                     </div>
 
+
                                                     <div class="FlexContainer">
 
-                                                       <label class="form-label">CARGO</label>
-                                                       <div class="col-md-3">
+
+                                                       <div class="col-md-4">
+                                                           <label class="form-label">CARGO</label>
                                                            <select class="form-select" aria-label="Default select example" id="validationCargo">
                                                                <option selected disabled value="">SELECCIONA</option>
 >
                                                            </select>
                                                        </div>
 
-                                                       <label class="form-label">ESTADO CIVIL</label>
-                                                       <div class="col-md-3">
+
+                                                       <div class="col-md-4">
+                                                           <label class="form-label">ESTADO CIVIL</label>
                                                            <select class="form-select" aria-label="Default select example" id="validationEC">
                                                                <option selected disabled value="">SELECCIONA</option>
 
@@ -306,16 +317,18 @@
                                                        </div>
 
 
-                                                       <label class="form-label">MINISTERIO</label>
-                                                       <div class="col-md-3">
+
+                                                       <div class="col-md-4">
+                                                           <label class="form-label">MINISTERIO</label>
                                                            <select class="form-select" aria-label="Default select example" id="validationM">
                                                                <option selected disabled value="">SELECCIONA</option>
-                                                               <
+
                                                            </select>
                                                        </div>
 
-                                                       <label class="form-label">ESTADO</label>
-                                                       <div class="col-md-3">
+
+                                                       <div class="col-md-4">
+                                                           <label class="form-label">ESTADO</label>
                                                            <select class="form-select" aria-label="Default select example" id="validationEstado">
                                                                <option selected disabled value="">SELECCIONA</option>
 
