@@ -88,7 +88,7 @@ body {
 }
 
 body.demos .section {
-    background: url(images/bg.png) repeat top center #f2f3f5;
+    /*background: url(images/bg.png) repeat top center #f2f3f5;*/
 }
 
 body.demos .section-title img {
@@ -1381,9 +1381,9 @@ a[data-toggle="collapse"] {
     padding: 20px 40px;
     vertical-align: middle;
     font-weight: 400;
-    transform: capitalize;
+    /*transform: capitalize;*/
     line-height: 1;
-    width: white-space;
+    /*width: white-space;*/
 }
 
 .top_countries_section {

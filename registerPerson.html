@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--    CSS HECHO POR MI -->
+    <link rel="stylesheet" href="css/mio.css"/>
+
+
     <!-- basic -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -28,7 +32,6 @@
     <link rel="stylesheet" href="css/bootstrap-select.css"/>
     <!-- scrollbar css -->
     <link rel="stylesheet" href="css/perfect-scrollbar.css"/>
-    <link rel="stylesheet" href="css/mio.css"/>
     <!-- custom css -->
     <link rel="stylesheet" href="css/custom.css"/>
     <!--[if lt IE 9]>
@@ -37,9 +40,12 @@
     <![endif]-->
 </head>
 <body class="dashboard dashboard_1">
+
 <div class="full_container">
+
     <div class="inner_container">
-        <!-- Sidebar  -->
+
+        <!-- INICIO DEL CONTENIDO DE LA BARRA LATERAL  -->
         <nav id="sidebar">
             <div class="sidebar_blog_1">
                 <div class="sidebar-header">
@@ -48,6 +54,8 @@
                                                   alt="#"/></a>
                     </div>
                 </div>
+
+                <!-- INFORMACION RAPIDA DEL USUARIO EN LA BARRA LATERAL-->
                 <div class="sidebar_user_info">
                     <div class="icon_setting"></div>
                     <div class="user_profle_side">
@@ -59,57 +67,62 @@
                         </div>
                     </div>
                 </div>
+
             </div>
-            <!-- Opciones del Menu -->
+
+            <!-- MENU DE LA BARRA LATERAL -->
             <div class="sidebar_blog_2">
                 <h4>General</h4>
+
+                <!-- LISTADO DE LAS OPTIONES DE LA BARRA LATERAL-->
                 <ul class="list-unstyled components">
                     <li class="active">
                         <a href="#dashboard" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i
                                 class="fa fa-dashboard yellow_color"></i> <span>Administrar</span></a>
                         <ul class="collapse list-unstyled" id="dashboard">
-                            <li>
-                                <a href="registerUser.html"> <span>Crear Usuario</span></a>
-                            </li>
 
                             <li>
                                 <a href="#">> <span>Consultar Usuario</span></a>
                             </li>
                         </ul>
                     </li>
-                    <li><a href="Register.html"><i class="fa fa-clock-o orange_color"></i> <span>Registrar</span></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-diamond purple_color"></i> <span>Consultar</span></a>
-
-                    </li>
+                    <li><a href="#"><i class="fa fa-clock-o orange_color"></i> <span>Registrar</span></a></li>
+                    <li><a href="#"><i class="fa fa-diamond purple_color"></i> <span>Consultar</span></a></li>
                     <li><a href="#"><i class="fa fa-table purple_color2"></i> <span>Reporte</span></a></li>
 
                 </ul>
             </div>
+
         </nav>
-        <!-- end sidebar -->
+        <!-- FIN CONTENIDO DE LA BARRA LATERAL  -->
 
-
-        <!-- right content -->
+        <!--CONTENIDO DE LA PAGINA-->
         <div id="content">
 
+            <!-- INICIO DE LA BARRA DEL TOP DE LA PAGINA-->
             <div class="topbar">
                 <nav class="navbar navbar-expand-lg navbar-light">
                     <div class="full">
+
+                        <!--  BOTON PARA MINIZAR LA BARRA LATERAL-->
                         <button type="button" id="sidebarCollapse" class="sidebar_toggle"><i class="fa fa-bars"></i>
                         </button>
-                        <div class="logo_section">
-                            <img class="img-responsive" src="images/logo/logo.png" alt="#"/>
-                        </div>
+
+                        <!--  LOGO DE LA PAGINA EN EL TOP DE LA PAGINA-->
+                        <div class="logo_section"><img class="img-responsive" src="images/logo/logo.png" alt="#"/></div>
+
+                        <!-- PARTE DERECHA DE LA BARRA DEL TOP DE LA PAGINA-->
                         <div class="right_topbar">
+
+                            <!-- INFOMACION DE LA SESION-->
                             <div class="icon_info">
 
+                                <!--BOTONES DE PERFIL Y SALIR-->
                                 <ul class="user_profile_dd">
                                     <li>
-                                        <a class="dropdown-toggle" data-toggle="dropdown"><img
-                                                class="img-responsive rounded-circle"
-                                                src="images/layout_img/user_img.jpg" alt="#"/><span class="name_user">Michael Williams</span></a>
+                                        <a class="dropdown-toggle" data-toggle="dropdown">
+                                            <img class="img-responsive rounded-circle"
+                                                 src="images/layout_img/user_img.jpg" alt="#"/><span class="name_user">Michael Williams</span></a>
                                         <div class="dropdown-menu">
                                             <a class="dropdown-item" href="#">Mi Perfil</a>
                                             <a class="dropdown-item" href="#"><span>Cerrar Sesion</span> <i
@@ -117,44 +130,46 @@
                                         </div>
                                     </li>
                                 </ul>
+
                             </div>
+
                         </div>
                     </div>
                 </nav>
             </div>
-            <!-- end topbar -->
+            <!--FIN DE LA BARRA DEL TOP DE LA PAGINA-->
 
-            <!-- dashboard inner -->
+
+            <!--CUERPO Y DASHBOARD DE LA PAGINA -->
             <div class="midde_cont">
 
-
-                <div class="midde_cont">
-
-                    <!--Nombre del modulo donde estamos-->
-                    <div class="container-fluid">
-                        <div class="row column_title">
-                            <div class="col-md-12">
-                                <div class="page_title">
-                                    <h2>Registro</h2>
-                                </div>
+                <!--Nombre del modulo donde estamos-->
+                <div class="container-fluid">
+                    <div class="row column_title">
+                        <div class="col-md-12">
+                            <div class="page_title">
+                                <h2>Registro Usuario</h2>
                             </div>
                         </div>
                     </div>
-                    <!-- REGISTRO -->
-                    <div class="row column2 graph margin_bottom_30">
+                </div>
 
-                        <div class="col-md-l2 col-lg-12">
-                            <div class="white_shd full">
+                <!-- CUERPO DONDE VA EL CONTENIDO DE LA PAGINA-->
+                <div class="row column2 graph margin_bottom_30">
+                    <div class="col-md-l2 col-lg-12">
+                        <div class="white_shd full">
 
-                                <div class="full graph_revenue">
-                                    <div>
-                                        <div class="col-md-12">
-                                            <div class="content">
-                                                <!--  DIV QUE CONTINE EL FORMULARIO DE REGISTRO-->
-                                                <div class="area_form">
+                            <div class="full graph_revenue">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="content">
 
 
-                                                    <!-- FORMULARIO DONDE SE REGISTRA LOS DATOS DE LAS PERSONAS -->
+                                            <div class="area_form">
+
+                                                <!--  DIV QUE CONTIENE EL FORMULARIO DE REGISTRO-->
+                                                <div>
+                                                    <!-- FORMULARIO DONDE SE REGISTRAR LOS USUARIOS -->
                                                     <form class="row g-3 needs-validation" novalidate>
 
                                                         <div class="col-md-4">
@@ -383,18 +398,24 @@
                             </div>
                         </div>
                     </div>
-                    <!-- end contenido -->
 
                 </div>
+                <!--FIN  DEL CUERPO DONDE VA EL CONTENIDO DE LA PAGINA-->
 
 
             </div>
-            <!-- end dashboard inner -->
+
+
         </div>
+        <!-- FIN DEL CONTENEDOR DE LA PAGINA-->
+
     </div>
 
 
 </div>
+
+
+<!-- SCRIPTS DE LA PAGINA-->
 <!-- jQuery -->
 <script src="js/jquery.min.js"></script>
 <script src="js/popper.min.js"></script>
@@ -416,10 +437,8 @@
     var ps = new PerfectScrollbar('#sidebar');
 </script>
 <!-- custom js -->
-<!--<script src="js/custom.js"></script>-->
-<!--<script src="js/chart_custom_style1.js"></script>-->
-<script src="js/register.js"></script>
-
+<script src="js/custom.js"></script>
+<script src="js/chart_custom_style1.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
@@ -429,5 +448,8 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
         integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
         crossorigin="anonymous"></script>
+
+<!--JS HECHOS POR MI-->
+<script src="js/register.js"></script>
 </body>
 </html>
