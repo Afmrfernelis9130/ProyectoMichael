@@ -5,8 +5,8 @@ const password = document.getElementById('password');
 let isLogged = false;
 
 
-btn.addEventListener('click', () => {
-
+btn.addEventListener('click', (e) => {
+    e.preventDefault();
     fetchData();
 
 
@@ -30,39 +30,42 @@ const fetchData = async () => {
 
 const login = (data) => {
 
-    let u = username.value;
-    let p = password.value;
+    let u = username.value.trim();
+    let p = password.value.trim();
 
     data.forEach(element => {
 
-        if (element.username === u && element.pass === p) {
+        if (element.username === u && element.password === p) {
             console.log("Login Successful")
             window.location.href = "index.html";
             isLogged = true;
 
 
         }
-        if (element.username !== u && element.pass !== p && !isLogged) {
+        if (element.username !== u && element.password !== p && !isLogged) {
 
-            console.log("Login Failed")
+           console.log("Login Failed")
+
 
         }
         if (u === "" && !isLogged) {
 
-            console.log("The username field is required")
 
+            alert("Please enter your username");
+
+            isLogged = true;
 
         }
         if (u === "" && p === "" && !isLogged) {
-            console.log("The username field is required")
 
+            alert("Please enter your username and password");
+            isLogged = true;
 
         }
         if (p === "" && !isLogged) {
-            console.log("The password field is required");
 
-            return false;
-
+            alert("Please enter your password");
+            isLogged = true;
         }
 
 
@@ -72,5 +75,20 @@ const login = (data) => {
 }
 
 
+function setSuccessFor(input) {
+    const formControl = input.parentElement;
+    formControl.className = 'form-control success';
+}
 
+function setErrorFor(input, message) {
+    const formControl = input.parentElement;
+    const small = formControl.querySelector('small');
+    formControl.className = 'field error';
+    small.innerText = message;
+}
 
+function setErrorForEmail(email) {
+    let regax = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/
+
+    return regax.test(email);
+}

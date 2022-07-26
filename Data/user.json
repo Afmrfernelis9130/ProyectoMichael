@@ -2,7 +2,7 @@
   {
     "id": 1,
     "username":"fmartinez",
-    "pass":"123456",
+    "password":"123456",
     "email":"fmartinez@gmail.com",
     "name": "Fernelis"
 
@@ -10,21 +10,21 @@
   {
     "id": 2,
     "username":"acastillo",
-    "pass":"123456",
+    "password":"123456",
     "email":"acastillo@gmail.com",
     "name":"Alex"
   },
   {
     "id": 3,
     "username":"pmartinez",
-    "pass":"123456",
+    "password":"123456",
     "email": "pmartinez@gmail.com",
     "name": "Pedro"
   },
   {
   "id": 4,
   "username":"fmartinez",
-  "pass":"1234567",
+  "password":"1234567",
   "email":"fmartinez@gmail.com2",
   "name": "Fernelis"
 
