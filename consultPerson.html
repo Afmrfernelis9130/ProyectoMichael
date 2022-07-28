@@ -172,18 +172,23 @@
                                                     <input id="inputBuscar"  type="text" placeholder="Buscar" class="form-control">
 
                                                     <button class="btn btn-outline-secondary" type="button" id="btnBuscar">Buscar</button>
+
+                                                    <select class="form-select form-select-lg mb-9" aria-label=".form-select-lg example">
+                                                        <option selected disabled value="">SELECCIONA</option>
+
+                                                    </select>
                                                 </div>
+
                                                 <!--  DIV QUE CONTIENE EL FORMULARIO DE REGISTRO-->
                                                 <div>
-                                                    <!-- FORMULARIO DONDE SE REGISTRAR LOS USUARIOS -->
-                                                    <table class="table" >
+                                                    <!-- LUGAR DONDE VA LA TABLA DONDE SE VAN A MOSTRAR LAS PERSONAS -->
+                                                    <table class="table">
                                                         <thead>
                                                         <tr>
                                                             <th scope="col">ID</th>
-                                                            <th scope="col">USERNAME</th>
-                                                            <th scope="col">PASSWORD</th>
-                                                            <th scope="col">EMAIL</th>
                                                             <th scope="col">NAME</th>
+                                                            <th scope="col">LAST NAME</th>
+                                                            <th scope="col">Handl</th>
                                                         </tr>
                                                         </thead>
 
@@ -251,6 +256,6 @@
         crossorigin="anonymous"></script>
 
 <!--JS HECHOS POR MI-->
-<script src="js/register.js"></script>
+<script src="js/consultPerson.js"></script>
 </body>
 </html>

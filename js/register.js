@@ -26,7 +26,7 @@ let btn = document.getElementById("btn");
 
 
 btn.addEventListener("click", () => {
-    addUser();
+    addPerson();
 
 
 })
@@ -108,7 +108,7 @@ const fetchStatus = async () => {
 
 
 //AGREGAR USUARIO
-function addUser() {
+function addPerson() {
     const register = {};
     register.name = name;
     register.last_name = lastname;
